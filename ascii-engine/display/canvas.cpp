@@ -29,5 +29,7 @@ ostream& ae::operator<<(ostream& os, const ae::Canvas& canvas) {
         system("clear");
     #endif
 
-    return os << canvas.get_buffer();
+    os << canvas.get_buffer();
+    canvas.clear_buffer();
+    return os;
 }
