@@ -10,8 +10,12 @@ namespace ascii_engine {
         Renderable(int x, int y) : Renderable(x, y, "") { }
         Renderable(int x, int y, string s) : x(x), y(y), graphic(s) { }
 
+        void translate(int delta_x, int delta_y) { x + delta_x; y + delta_y; }
+
         // setters
         void set_graphic(const string& s) { graphic = s; }
+        void set_x(int val) { x = val; }
+        void set_y(int val) { y = val; }
 
         // getters
         const string& get_graphic() const { return graphic; }
