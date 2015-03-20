@@ -19,9 +19,9 @@ void ae::World::remove(ae::Entity* e) {
     renderer.remove(e);
 }
 
-void ae::World::update() {
+void ae::World::update(double delta_time) {
     for (auto& e : entities) {
-        e->update();
+        e->update(delta_time);
     }
     renderer.render();
 }

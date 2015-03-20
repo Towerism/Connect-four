@@ -15,7 +15,7 @@ namespace ascii_engine {
         void remove(shared_ptr<Entity> e) { remove(e.get()); }
         void remove(Entity* e);
 
-        virtual void update();
+        virtual void update(double delta_time);
     private:
         vector<shared_ptr<Entity>> entities;
         Renderer renderer;

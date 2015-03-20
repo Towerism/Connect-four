@@ -9,7 +9,7 @@ namespace ascii_engine {
         Entity(int x, int y) : Entity(x, y, "") { }
         Entity(int x, int y, const string& s) : Renderable(x, y, s) { }
 
-        virtual void update() { }
+        virtual void update(double delta_time) { }
     };
 }
 

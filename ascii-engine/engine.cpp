@@ -9,7 +9,7 @@ void ae::Engine::game_loop() {
     Framerate_limiter fps_limiter(target_fps);
     while (!exit_loop) {
         fps_limiter.frame_start();
-        world->update();
+        world->update(fps_limiter.get_delta_time());
         fps_limiter.frame_end();
     }
 }
