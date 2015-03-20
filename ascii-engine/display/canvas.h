@@ -1,3 +1,6 @@
+#ifndef CANVAS_H
+#define CANVAS_H
+
 #include "screen_buffer.h"
 
 namespace ascii_engine {
@@ -15,3 +18,5 @@ namespace ascii_engine {
     };
     ostream& operator<<(ostream& os, const Canvas& canvas);
 }
+
+#endif // CANVAS_H

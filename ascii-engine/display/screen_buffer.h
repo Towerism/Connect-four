@@ -1,3 +1,6 @@
+#ifndef SCREEN_BUFFER_H
+#define SCREEN_BUFFER_H
+
 #include <vector>
 #include <iostream>
 
@@ -27,3 +30,4 @@ namespace ascii_engine {
     ostream& operator<<(ostream& os, const Screen_buffer& buf);
 }
 
+#endif // SCREEN_BUFFER_H
