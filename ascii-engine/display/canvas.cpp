@@ -21,7 +21,7 @@ void ae::Canvas::draw(int x, int y, const string& s) {
     }
 }
 
-ostream& ae::operator<<(ostream& os, const ae::Canvas& canvas) {
+ostream& ae::operator<<(ostream& os, ae::Canvas& canvas) {
     // clear the screen before we write to the output stream
     #ifdef _WIN32
         system("cls");

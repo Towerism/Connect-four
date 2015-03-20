@@ -1,4 +1,5 @@
 #include <memory>
+#include <algorithm>
 #include "renderer.h"
 #include "renderable.h"
 
@@ -11,7 +12,8 @@ void ae::Renderer::add(shared_ptr<Renderable> r) {
 void ae::Renderer::remove(ae::Renderable* r) {
     const auto& it = find_if(renderables.begin(), renderables.end(),
         [r](shared_ptr<Renderable> elem) { return elem.get() == r; }
-    renderables.erase(r);
+    );
+    renderables.erase(it);
 }
 
 void ae::Renderer::render() {
