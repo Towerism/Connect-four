@@ -1,5 +1,5 @@
 #include <chrono>
-#include <thread>
+#include <math.h>
 
 #ifdef _WIN32
     #include <windows.h>
@@ -25,17 +25,20 @@ namespace ascii_engine {
         }
         void frame_end() {
             end = time_point_cast<milliseconds>(clock.now());
-            delta_time = end - start;
-            if (delta_time.count() < target_dur.count()) {
-                unsigned sleep_length = duration_cast<milliseconds>(target_dur - delta_time).count();
-                sleep(sleep_length);
+            frame_time = end - start;
+            if (frame_time.count() < target_dur.count()) {
+                milliseconds sleep_length = duration_cast<milliseconds>(target_dur - frame_time);
+                sleep(sleep_length.count());
+                delta_time = frame_time + sleep_length;
+            } else {
+                delta_time = frame_time;
             }
         }
         double get_delta_time() { return duration_cast<duration<double>>(delta_time).count(); }
     private:
         steady_clock clock;
         int target_fps;
-        steady_clock::duration target_dur, delta_time;
+        steady_clock::duration target_dur, frame_time, delta_time;
         steady_clock::time_point start, end;
     };
 }
