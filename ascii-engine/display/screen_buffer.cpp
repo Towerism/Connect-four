@@ -30,6 +30,7 @@ ostream& ae::operator<<(ostream& os, const ae::Screen_buffer& buf) {
         for (char c : vec) {
             os << c;
         }
-        return os << '\n';
+        os << '\n';
     }
+    return os;
 }
