@@ -8,6 +8,10 @@ namespace ascii_engine {
     struct Screen_buffer {
 
         Screen_buffer(int width, int height, char val = ' ');
+        
+        void clear();
+
+        // setters
         void set_char(int x, int y, char val);
 
         // getters

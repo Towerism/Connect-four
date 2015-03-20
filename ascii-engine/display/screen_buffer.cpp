@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include "screen_buffer.h"
 
 namespace ae = ascii_engine;
@@ -10,6 +11,12 @@ ae::Screen_buffer::Screen_buffer(int width, int height, char val) :
     for (int i = 0; i < height; ++i) {
         vector<char> row(width, val);
         buffer.push_back(row);
+    }
+}
+
+void ae::Screen_buffer::clear() {
+    for (auto& vec : buffer) {
+        fill(vec.begin(), vec.end(), ' ');
     }
 }
 
