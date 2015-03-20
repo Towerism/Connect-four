@@ -19,14 +19,6 @@ void ae::Screen_buffer::set_char(int x, int y, char val) {
 
 ostream& ae::operator<<(ostream& os, const ae::Screen_buffer& buf) {
     ae::buffer_t buffer = buf.get_buffer();
-
-    // clear the screen before we write to the output stream
-    #ifdef _WIN32
-        system("cls");
-    #else // Assume POSIX
-        system("clear");
-    #endif
-
     for (const auto& vec : buffer) {
         for (char c : vec) {
             os << c;
