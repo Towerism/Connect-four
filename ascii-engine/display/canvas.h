@@ -18,7 +18,7 @@ namespace ascii_engine {
     private:
         Screen_buffer buffer;
     };
-    ostream& operator<<(ostream& os, Canvas& canvas);
+    ostream& operator<<(ostream& os, const Canvas& canvas);
 }
 
 #endif // CANVAS_H
