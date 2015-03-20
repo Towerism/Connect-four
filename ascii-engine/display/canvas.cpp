@@ -31,9 +31,3 @@ ostream& ae::operator<<(ostream& os, const ae::Canvas& canvas) {
 
     return os << canvas.get_buffer();
 }
-
-int main() {
-    ae::Canvas canvas(5, 5);
-    canvas.draw(-2,-2,"hi\nmy name is\nmartin\nfracker");
-    cout << canvas;
-}
