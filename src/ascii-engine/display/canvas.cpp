@@ -20,7 +20,3 @@ void ae::Canvas::draw(int x, int y, const string& s) {
         ++j;
     }
 }
-
-ostream& ae::operator<<(ostream& os, const ae::Canvas& canvas) {
-    return os << canvas.get_buffer();
-}

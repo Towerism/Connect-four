@@ -14,7 +14,7 @@ namespace ascii_engine {
         Screen_buffer(int width, int height, char val = ' ');
         ~Screen_buffer() { endwin(); /* restore normal terminal behavior */ }
         
-        void clear();
+        void flush();
 
         // setters
         void set_char(int x, int y, char val);
@@ -27,9 +27,8 @@ namespace ascii_engine {
     private:
         int width, height;
         buffer_t buffer;
+        void purge();
     };
-
-    ostream& operator<<(ostream& os, const Screen_buffer& buf);
 }
 
 #endif // SCREEN_BUFFER_H

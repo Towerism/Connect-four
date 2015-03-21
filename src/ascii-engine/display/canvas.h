@@ -11,14 +11,13 @@ namespace ascii_engine {
         void draw(int x, int y, char c) { buffer.set_char(x, y, c); }
         void draw(int x, int y, const string& s);
 
-        void clear_buffer() { buffer.clear(); }
-        
+        void refresh() { buffer.flush(); }
+
         // getters
         const Screen_buffer get_buffer() const { return buffer; }
     private:
         Screen_buffer buffer;
     };
-    ostream& operator<<(ostream& os, const Canvas& canvas);
 }
 
 #endif // CANVAS_H
