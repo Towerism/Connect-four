@@ -2,7 +2,6 @@
 #include <algorithm>
 #include "renderer.h"
 #include "renderable.h"
-#include "C:/pdcurs34/curses.h"
 
 namespace ae = ascii_engine;
 
