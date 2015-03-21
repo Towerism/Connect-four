@@ -1,7 +1,7 @@
 #include <memory>
 #include <algorithm>
-#include "renderer.h"
-#include "renderable.h"
+#include "ascii-engine/display/renderer.h"
+#include "ascii-engine/display/renderable.h"
 
 namespace ae = ascii_engine;
 

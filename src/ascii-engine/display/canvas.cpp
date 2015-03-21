@@ -1,6 +1,6 @@
 #include <sstream>
 #include <string>
-#include "canvas.h"
+#include "ascii-engine/display/canvas.h"
 
 namespace ae = ascii_engine;
 using namespace std;

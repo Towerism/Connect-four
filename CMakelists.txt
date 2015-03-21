@@ -12,5 +12,7 @@ set(curses_include_dir "C:/pdcurs34/")
 set(curses_lib "C:/pdcurs34/win32/pdcurses.a")
 set(curses_lib_name pdcurses) # the name of the lib, ncurses on unix
 
+include_directories("include")
+
 add_subdirectory(src)
 

@@ -1,4 +1,4 @@
-#include "worlds/game_world.h"
+#include "game_world.h"
 
 Game_world::Game_world(int x, int y) : 
     ascii_engine::World(x, y), board(new Game_board(1, 1)) {

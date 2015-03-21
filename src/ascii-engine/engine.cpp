@@ -1,5 +1,5 @@
-#include "engine.h"
-#include "timing/framerate_limiter.h"
+#include "ascii-engine/engine.h"
+#include "ascii-engine/timing/framerate_limiter.h"
 
 namespace ae = ascii_engine;
 using namespace std;
