@@ -1,0 +1,9 @@
+add_subdirectory(ascii-engine)
+add_subdirectory(worlds)
+
+set(executable_sources main.cpp)
+add_executable(${executable_name} ${executable_sources})
+
+set(executable_libs asciiengine entities worlds)
+target_link_libraries(${executable_name} ${executable_libs})
+

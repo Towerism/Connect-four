@@ -1,0 +1,2 @@
+set(display_sources canvas.cpp renderer.cpp screen_buffer.cpp)
+add_library(display ${display_sources})

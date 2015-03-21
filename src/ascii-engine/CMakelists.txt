@@ -1,0 +1,8 @@
+add_subdirectory(display)
+
+set(asciiengine_sources engine.cpp world.cpp)
+add_library(asciiengine ${asciiengine_sources})
+
+set(asciiengine_libs display)
+target_link_libraries(asciiengine ${asciiengine_libs})
+

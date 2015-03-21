@@ -1,0 +1,2 @@
+set(worlds_sources game_world.cpp)
+add_library(worlds ${worlds_sources})
