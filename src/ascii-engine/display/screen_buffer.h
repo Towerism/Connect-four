@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <iostream>
+#include "C:/pdcurs34/curses.h"
 
 using namespace std;
 
@@ -11,6 +12,7 @@ namespace ascii_engine {
     struct Screen_buffer {
 
         Screen_buffer(int width, int height, char val = ' ');
+        ~Screen_buffer() { endwin(); /* restore normal terminal behavior */ }
         
         void clear();
 

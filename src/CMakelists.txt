@@ -1,9 +1,17 @@
 add_subdirectory(ascii-engine)
 add_subdirectory(worlds)
 
+# set these curses variables to the correct paths on your system
+set(curses_include_dir C:/pdcurs34/)
+set(curses_lib_dir C:/pdcurs34/win32/pdcurses.a)
+set(curses_lib_name pdcurses) # the name of the lib, ncurses on unix
+
+add_library(${curses_lib_name} STATIC IMPORTED)
+set_target_properties(${curses_lib_name} PROPERTIES IMPORTED_LOCATION ${curses_lib_dir})
+
 set(executable_sources main.cpp)
 add_executable(${executable_name} ${executable_sources})
 
-set(executable_libs asciiengine entities worlds)
+set(executable_libs asciiengine worlds ${curses_lib_name})
 target_link_libraries(${executable_name} ${executable_libs})
 
