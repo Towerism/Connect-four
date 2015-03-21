@@ -7,4 +7,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
 set(executable_name connect-four)
 
+# set these curses variables to the correct paths on your system
+set(curses_include_dir "C:/pdcurs34/")
+set(curses_lib "C:/pdcurs34/win32/pdcurses.a")
+set(curses_lib_name pdcurses) # the name of the lib, ncurses on unix
+
 add_subdirectory(src)
