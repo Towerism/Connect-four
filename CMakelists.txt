@@ -3,6 +3,8 @@ project("Connect Four")
 
 list(APPEND CMAKE_CXX_FLAGS "-std=c++14 ${CMAKE_CXX_FLAGS}")
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+
 set(executable_name connect-four)
 
 add_subdirectory(src)

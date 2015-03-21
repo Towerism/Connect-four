@@ -1,4 +1,6 @@
 add_subdirectory(ascii-engine)
+add_subdirectory(entities)
+add_subdirectory(worlds)
 
 # set these curses variables to the correct paths on your system
 set(curses_include_dir C:/pdcurs34/)
@@ -11,9 +13,6 @@ set_target_properties(${curses_lib_name} PROPERTIES IMPORTED_LOCATION ${curses_l
 set(executable_sources main.cpp)
 add_executable(${executable_name} ${executable_sources})
 
-set(entities entities/game_board.cpp)
-set(worlds worlds/game_world.cpp)
-add_library(game_objs ${entities} ${worlds}) 
-set(executable_libs asciiengine game_objs ${curses_lib_name})
+set(executable_libs asciiengine entities worlds ${curses_lib_name})
 target_link_libraries(${executable_name} ${executable_libs})
 
