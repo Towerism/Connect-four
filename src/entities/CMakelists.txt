@@ -1,0 +1,2 @@
+set(entities_sources game_board.cpp)
+add_library(entities ${entities_sources})
