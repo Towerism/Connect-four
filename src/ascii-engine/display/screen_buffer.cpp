@@ -1,6 +1,6 @@
 #include <iostream>
 #include <algorithm>
-#include "curses.h"
+#include <curses.h>
 #include "screen_buffer.h"
 
 namespace ae = ascii_engine;
