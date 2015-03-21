@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.2.1 FATAL_ERROR)
 project("Connect Four")
+set(executable_name connect-four)
 
 list(APPEND CMAKE_CXX_FLAGS "-std=c++14 ${CMAKE_CXX_FLAGS}")
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
-set(executable_name connect-four)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
 # set these curses variables to the correct paths on your system
 set(curses_include_dir "C:/pdcurs34/")
@@ -13,3 +13,4 @@ set(curses_lib "C:/pdcurs34/win32/pdcurses.a")
 set(curses_lib_name pdcurses) # the name of the lib, ncurses on unix
 
 add_subdirectory(src)
+
