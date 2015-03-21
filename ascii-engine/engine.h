@@ -1,3 +1,6 @@
+#ifndef ENGINE_H
+#define ENGINE_H
+
 #include <memory>
 #include "world.h"
 
@@ -18,3 +21,5 @@ namespace ascii_engine {
         bool exit_loop = false;
     };
 }
+
+#endif // ENGINE_H

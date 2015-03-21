@@ -1,3 +1,6 @@
+#ifndef FRAMERATE_LIMITER_H
+#define FRAMERATE_LIMITER_H
+
 #include <chrono>
 #include <math.h>
 
@@ -42,3 +45,5 @@ namespace ascii_engine {
         steady_clock::time_point start, end;
     };
 }
+
+#endif // FRAMERATE_LIMITER_H
