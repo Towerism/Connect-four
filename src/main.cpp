@@ -3,8 +3,7 @@
 #include "ascii-engine/engine.h"
 
 int main() {
-    int width = 50, height = 25;
-    ascii_engine::Engine engine(width, height);
-    engine.set_world(shared_ptr<World>(new Game_world(width, height));
+    ascii_engine::Engine engine(60);
+    engine.set_world(shared_ptr<ae::World>(new Game_world(25, 15)));
     engine.game_loop();
 }
