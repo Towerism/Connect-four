@@ -10,7 +10,6 @@ ae::Screen_buffer::Screen_buffer(int width, int height, char val) :
     width(width), height(height) {
     // set up console for curses
     initscr();
-    noecho();
     curs_set(0);
     clear();
     // initialize the container
@@ -18,6 +17,11 @@ ae::Screen_buffer::Screen_buffer(int width, int height, char val) :
         vector<char> row(width, val);
         buffer.push_back(row);
     }
+}
+
+ae::Screen_buffer::~Screen_buffer() { 
+    endwin();
+    clear();
 }
 
 void ae::Screen_buffer::purge() {
