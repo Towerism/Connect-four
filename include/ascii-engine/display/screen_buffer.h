@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <iostream>
-#include "C:/pdcurs34/curses.h"
+#include <curses.h>
 
 using namespace std;
 
