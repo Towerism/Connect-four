@@ -13,7 +13,14 @@ void ae::Engine::game_loop() {
     while (!exit_loop) {
         fps_limiter.frame_start();
         input.poll();
+        poll_exit_key();
         world->update(fps_limiter.get_delta_time());
         fps_limiter.frame_end();
+    }
+}
+
+void ae::Engine::poll_exit_key() {
+    if (ae::Input_handler::get_instance().check_key(exit_key)) {
+        exit_loop = true;
     }
 }
