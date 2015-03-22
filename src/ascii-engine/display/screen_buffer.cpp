@@ -10,8 +10,9 @@ ae::Screen_buffer::Screen_buffer(int width, int height, char val) :
     width(width), height(height) {
     // set up console for curses
     initscr();
-    noecho();
+    //noecho();
     curs_set(0);
+    clear();
     // initialize the container
     for (int i = 0; i < height; ++i) {
         vector<char> row(width, val);
@@ -31,7 +32,6 @@ void ae::Screen_buffer::set_char(int x, int y, char val) {
 
 void ae::Screen_buffer::flush() {
     // clear screen before outputting the buffer
-    clear();
     for (int i = 0; i < width; ++i) {
         for (int j = 0; j < height; ++j) {
             mvprintw(j, i, "%c", buffer.at(j).at(i));
