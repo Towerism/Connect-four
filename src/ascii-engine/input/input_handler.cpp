@@ -1,11 +1,8 @@
-#include <chrono>
 #include <algorithm>
 #include <curses.h>
 #include "ascii-engine/input/input_handler.h"
 
 namespace ae = ascii_engine;
-using namespace std;
-using namespace chrono;
 
 ae::Input_handler::Input_handler() {
     raw();
