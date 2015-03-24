@@ -4,8 +4,14 @@
 *.o
 *.obj
 
-#binary directory
-bin/
+# CMake stuff
+CMakefiles/
+*.cmake
+CMakeCache.txt
+Makefile
+bin/bin/
+bin/lib/
+bin/src/
 
 # vim swap files
 *.swp

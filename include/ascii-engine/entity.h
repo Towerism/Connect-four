@@ -1,7 +1,7 @@
 #ifndef ENTITY_H
 #define ENTITY_H
 
-#include "../display/renderable.h"
+#include "ascii-engine/display/renderable.h"
 
 namespace ascii_engine {
     struct Entity : Renderable {

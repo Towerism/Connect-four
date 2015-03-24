@@ -11,9 +11,9 @@ namespace ascii_engine {
         }
         Input_handler();
         void poll();
-        bool check_key(char key_code);
+        bool check_key(int key_code);
     private:
-        std::vector<char> input_vec;
+        std::vector<int> input_vec;
 
         Input_handler(const Input_handler&) = delete;
         void operator=(const Input_handler&) = delete;

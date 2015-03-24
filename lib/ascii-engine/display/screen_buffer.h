@@ -4,10 +4,8 @@
 #include <vector>
 #include <iostream>
 
-using namespace std;
-
 namespace ascii_engine {
-    typedef vector<vector<char>> buffer_t;
+    typedef std::vector<std::vector<char>> buffer_t;
     struct Screen_buffer {
 
         Screen_buffer(int width, int height, char val = ' ');
@@ -26,6 +24,7 @@ namespace ascii_engine {
     private:
         int width, height;
         buffer_t buffer;
+        
         void purge();
     };
 }

@@ -6,18 +6,16 @@
 #include "renderable.h"
 #include "canvas.h"
 
-using namespace std;
-
 namespace ascii_engine {
     struct Renderer {
         Renderer(int width, int height) : canvas(width, height) { };
-        void add(shared_ptr<Renderable> r);
-        void remove(shared_ptr<Renderable> r) { remove(r.get()); }
+        void add(std::shared_ptr<Renderable> r);
+        void remove(std::shared_ptr<Renderable> r) { remove(r.get()); }
         void remove(Renderable* r);
 
         void render();
     private:
-        vector<shared_ptr<Renderable>> renderables;
+        std::vector<std::shared_ptr<Renderable>> renderables;
         Canvas canvas;
     };
 }

@@ -4,8 +4,6 @@
 #include <memory>
 #include "world.h"
 
-using namespace std;
-
 namespace ascii_engine {
     struct Engine {
         Engine(int fps) : target_fps(fps) { }
@@ -16,10 +14,10 @@ namespace ascii_engine {
         char get_exit_key() const { return exit_key; }
 
         // setters
-        void set_world(shared_ptr<World> w) { world = w; }
+        void set_world(std::shared_ptr<World> w) { world = w; }
         void set_exit_key(char key) { exit_key = key; }
     private:
-        shared_ptr<World> world;
+        std::shared_ptr<World> world;
         int target_fps;
         bool in_loop = false;
         bool exit_loop = false;

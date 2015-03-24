@@ -1,6 +1,6 @@
 #include <algorithm>
 #include <curses.h>
-#include "ascii-engine/input/input_handler.h"
+#include "input_handler.h"
 
 namespace ae = ascii_engine;
 
@@ -25,9 +25,9 @@ void ae::Input_handler::poll() {
     }
 }
 
-bool ae::Input_handler::check_key(char key) {
+bool ae::Input_handler::check_key(int key) {
     const auto& it = find_if(input_vec.begin(), input_vec.end(),
-        [key](const char& c) { return c == key; }
+        [key](int c) { return c == key; }
     );
     if (it != input_vec.end()) {
         input_vec.erase(it);

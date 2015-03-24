@@ -1,9 +1,10 @@
 #include <memory>
 #include <algorithm>
-#include "ascii-engine/display/renderer.h"
-#include "ascii-engine/display/renderable.h"
+#include "renderer.h"
+#include "renderable.h"
 
 namespace ae = ascii_engine;
+using namespace std;
 
 void ae::Renderer::add(shared_ptr<Renderable> r) {
     renderables.push_back(r);

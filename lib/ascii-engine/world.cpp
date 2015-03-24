@@ -1,7 +1,7 @@
 #include <memory>
 #include <algorithm>
-#include "ascii-engine/world.h"
-#include "ascii-engine/entity/entity.h"
+#include "world.h"
+#include "entity.h"
 
 namespace ae = ascii_engine;
 using namespace std;

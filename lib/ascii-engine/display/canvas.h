@@ -9,7 +9,7 @@ namespace ascii_engine {
             buffer(width, height, val) { }
 
         void draw(int x, int y, char c) { buffer.set_char(x, y, c); }
-        void draw(int x, int y, const string& s);
+        void draw(int x, int y, const std::string& s);
 
         void refresh() { buffer.flush(); }
 

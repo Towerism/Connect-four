@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <curses.h>
-#include "ascii-engine/display/screen_buffer.h"
+#include "screen_buffer.h"
 
 namespace ae = ascii_engine;
 using namespace std;
