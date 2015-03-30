@@ -1,7 +1,7 @@
 #ifndef INPUT_HANDLER_H
 #define INPUT_HANDLER_H
 
-#include <vector>
+#include <map>
 
 namespace ascii_engine {
     struct Input_handler {
@@ -13,7 +13,7 @@ namespace ascii_engine {
         void poll();
         bool check_key(int key_code);
     private:
-        std::vector<int> input_vec;
+        std::map<int, int> input_map;
 
         Input_handler(const Input_handler&) = delete;
         void operator=(const Input_handler&) = delete;
