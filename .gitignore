@@ -12,6 +12,7 @@ Makefile
 bin/bin/
 bin/lib/
 bin/src/
+connect-four
 
 # vim swap files
 *.swp
