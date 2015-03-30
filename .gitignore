@@ -5,7 +5,7 @@
 *.obj
 
 # CMake stuff
-CMakefiles/
+CMakeFiles/
 *.cmake
 CMakeCache.txt
 Makefile
