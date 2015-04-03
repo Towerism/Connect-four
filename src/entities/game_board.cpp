@@ -1,4 +1,4 @@
-#include "entities/game_board.h"
+#include "game_board.h"
 
 Game_board::Game_board(int x, int y) : ascii_engine::Entity(x, y) {
     set_graphic("|_|_|_|_|_|_|_|\n"

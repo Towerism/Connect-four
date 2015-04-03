@@ -24,9 +24,9 @@ elseif (UNIX)
 endif (WIN32)
 include_directories(${CURSES_INCLUDE_DIR})
 
-include_directories("include") # public headers
 include_directories("src")
 include_directories("lib") # library implementation and private headers
+include_directories("lib/ascii-engine/include") # ascii-engine public headers
 
 add_subdirectory(lib)
 add_subdirectory(src)
