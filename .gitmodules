@@ -1,0 +1,3 @@
+[submodule "lib/ascii-engine"]
+	path = lib/ascii-engine
+	url = git@github.com:Towerism/ascii-engine.git
