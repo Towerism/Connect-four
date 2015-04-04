@@ -1,6 +1,5 @@
 #include "entities/test_entity.h"
 #include "ascii-engine/input_handler.h"
-#include <curses.h>
 
 Test_entity::Test_entity(int x, int y) : ascii_engine::Entity(x, y) {
     set_graphic("@");
@@ -19,5 +18,8 @@ void Test_entity::update(double delta_time) {
     }
     if (input.check_key('l')) {
         translate(1, 0);
+    }
+    if (input.check_key('Q')) {
+        pend_removal();
     }
 }
