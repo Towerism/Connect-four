@@ -5,13 +5,11 @@
 *.obj
 
 # CMake stuff
-CMakeFiles/
+CMakeFiles
 *.cmake
 CMakeCache.txt
 Makefile
-bin/bin/
-bin/lib/
-bin/src/
+bin
 connect-four
 
 # vim swap files
