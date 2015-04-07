@@ -20,7 +20,8 @@ add_executable(${CMAKE_PROJECT_NAME} ${project_sources})
 
 add_subdirectory(lib)
 add_subdirectory(src)
+add_subdirectory(test)
 
-set(project_libs asciiengine entities worlds)
+set(project_libs asciiengine entities worlds player board)
 target_link_libraries(${CMAKE_PROJECT_NAME} ${project_libs})
 
