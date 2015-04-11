@@ -11,7 +11,7 @@ namespace ae = ascii_engine;
 struct Game_world : ae::World {
   Game_world(int x, int y);
   virtual void update(double delta_time);
-  private:
+private:
   std::shared_ptr<ascii_engine::Entity> board;
 };
 

@@ -13,7 +13,7 @@ struct Bit_boards {
   void push_to_column(int col);
 
   void set_adversary(Bit_boards* other) { adversary = other; }
-  private:
+private:
   const int ROWS = 6;
   const int COLS = 7;
 

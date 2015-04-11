@@ -4,7 +4,7 @@
 #include <string>
 
 struct Player {
-  private:
+private:
     std::string name;
 };
 
