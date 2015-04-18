@@ -8,5 +8,5 @@ $ cd Connect-four
 $ git submodule init
 $ git submodule update
 ```
-And that will make sure that you have all the file necessary for the submodules.
+And that will make sure that you have all the files necessary for the submodules.
 
