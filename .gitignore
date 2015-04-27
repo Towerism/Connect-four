@@ -7,7 +7,6 @@
 # CMake stuff
 CMakeFiles
 CMakeCache.txt
-Makefile
 build
 connect-four
 
