@@ -5,6 +5,6 @@ Compiling is easy with our automated Makefile:
 ```
 $ git clone git@github.com:Towerism/Connect-four.git
 $ cd Connect-four
-$ cmake
+$ make
 $ ./connect-four
 ```
