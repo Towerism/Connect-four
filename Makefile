@@ -23,7 +23,7 @@ all submodules-update::
 all generate::
 	@mkdir -p build && cd build && cmake ..
 all compile::
-	@make -C build
+	@make -s -C build
 
 #### Symlinking
 
