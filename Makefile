@@ -12,11 +12,11 @@ all submodules::
 	@echo "-- Updating submodules"
 submodules:: submodules-init submodules-sync submodules-update
 all submodules-init::
-	@git submodule init
+	@git submodule --quiet init
 all submodules-sync::
-	@git submodule sync
+	@git submodule --quiet sync
 all submodules-update::
-	@git submodule update
+	@git submodule --quiet update
 
 #### CMake and Compiling
 
