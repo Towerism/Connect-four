@@ -9,7 +9,7 @@ all::
 #### Submodules
 
 all submodules::
-	@echo "-- Updating submodules"
+	@printf -- "-- Updating submodules"
 submodules:: submodules-init submodules-sync submodules-update
 all submodules-init::
 	@git submodule --quiet init
@@ -17,6 +17,8 @@ all submodules-sync::
 	@git submodule --quiet sync
 all submodules-update::
 	@git submodule --quiet update
+all submodules::
+	@printf " - done\n"
 
 #### CMake and Compiling
 
