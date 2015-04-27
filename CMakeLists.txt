@@ -13,7 +13,7 @@ include_directories("src")
 include_directories("lib") # library implementation and private headers
 include_directories("lib/ascii-engine/include") # ascii-engine public headers
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build)
 
 set(project_sources main.cpp)
 add_executable(${CMAKE_PROJECT_NAME} ${project_sources})
