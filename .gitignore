@@ -6,10 +6,9 @@
 
 # CMake stuff
 CMakeFiles
-*.cmake
 CMakeCache.txt
 Makefile
-bin
+build
 connect-four
 
 # vim swap files
