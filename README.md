@@ -1,12 +1,10 @@
 # Connect-four
 An ASCII-based connect four game
-### Cloning guideline
-This repository uses submodules, so this is how you would go about cloning our repo correctly:
+### Clone, compile, run... Easy!
+Compiling is easy with our automated Makefile:
 ```
 $ git clone git@github.com:Towerism/Connect-four.git
 $ cd Connect-four
-$ git submodule init
-$ git submodule update
+$ cmake
+$ ./connect-four
 ```
-And that will make sure that you have all the files necessary for the submodules.
-
