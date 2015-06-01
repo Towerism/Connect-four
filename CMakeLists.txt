@@ -10,6 +10,7 @@ set(CMAKE_CXX_FLAGS_MINSIZEREL "-Os -DNDEBUG")
 set(CMAKE_CXX_FLAGS_RELEASE "-O4 -DNDEBUG")
 
 include_directories("src")
+include_directories("lib/ascii-engine/src/")
 include_directories("lib/ascii-engine/include/ascii-engine/")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build)
