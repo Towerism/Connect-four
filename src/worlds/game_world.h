@@ -2,9 +2,7 @@
 #define GAME_WORLD_H
 
 #include <memory>
-#include "ascii-engine/world.h"
-#include "entities/game_board.h"
-#include "ascii-engine/entity.h"
+#include <ascii_engine.h>
 
 namespace ae = ascii_engine;
 

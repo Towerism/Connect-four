@@ -11,7 +11,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O4 -DNDEBUG")
 
 include_directories("src")
 include_directories("lib") # library implementation and private headers
-include_directories("lib/ascii-engine/include") # ascii-engine public headers
+include_directories("lib/ascii-engine/include/") # ascii-engine public headers
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build)
 

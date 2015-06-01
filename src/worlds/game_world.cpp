@@ -1,5 +1,5 @@
 #include "game_world.h"
-#include "entities/test_entity.h"
+#include "entities/game_board.h"
 
 using namespace std;
 

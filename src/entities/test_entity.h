@@ -1,7 +1,7 @@
 #ifndef TEST_ENTITY_H
 #define TEST_ENTITY_H
 
-#include "ascii-engine/entity.h"
+#include <ascii_engine.h>
 
 struct Test_entity : ascii_engine::Entity {
   Test_entity(int x, int y);

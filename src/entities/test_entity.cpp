@@ -1,12 +1,12 @@
+#include <ascii_engine.h>
 #include "entities/test_entity.h"
-#include "ascii-engine/input_handler.h"
 
 Test_entity::Test_entity(int x, int y) : ascii_engine::Entity(x, y) {
   set_graphic("@");
 }
 
 void Test_entity::update(double delta_time) {
-  ascii_engine::Input_handler& input = ascii_engine::Input_handler::get_instance();
+  ascii_engine::Input_handler& input = ascii_engine::Input_handler::get();
   if (input.check_key('i')) {
     translate(0, -1);
   }
