@@ -20,6 +20,6 @@ void Test_entity::update(double delta_time) {
     translate(1, 0);
   }
   if (input.check_key('Q')) {
-    pend_removal();
+    remover->remove(this);
   }
 }
