@@ -6,7 +6,7 @@ Test_entity::Test_entity(int x, int y) : ascii_engine::Entity(x, y) {
 }
 
 void Test_entity::update(double delta_time) {
-  ascii_engine::Input_handler& input = ascii_engine::Input_handler::get();
+  ascii_engine::Input_buffer& input = ascii_engine::Input_buffer::get();
   if (input.check_key('k')) {
     translate(0, -1);
   }

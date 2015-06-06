@@ -6,7 +6,7 @@ using namespace std;
 
 Game_context::Game_context() : Context(15, 25), board(new Game_board(1, 1)) {
   //add(board);
-  add(shared_ptr<ae::Entity>(new Test_entity(0, 0)));
+  add(new Test_entity(0, 0));
 }
 
 void Game_context::update(double delta_time) {
