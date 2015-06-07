@@ -4,12 +4,6 @@
 *.o
 *.obj
 
-# CMake stuff
-CMakeFiles
-CMakeCache.txt
-build
-connect-four
-
 # vim swap files
 *.swp
 
@@ -35,4 +29,8 @@ connect-four
 *.exe
 *.out
 *.app
+
+# Project specific
 /.touch-submodules
+/connect-four
+/build
